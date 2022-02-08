@@ -1,0 +1,136 @@
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>اظهارنامه</title>
+    <link rel="stylesheet" href="/style/bootstrap.min.css" />
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+
+  <body>
+    <form class="needs-validation" novalidate>
+      <h1>مشخصات</h1>
+      <h3>اظهار کننده</h3>
+      <div id="personalFormDuplicateSender">
+        <div>
+          <label for="">نام</label>
+          <input
+            type="text"
+            name="ezharnameForm"
+            id="ezharnameFormEzharKFirstName"
+          />
+          <label for="">نام خانوادگی</label>
+          <input
+            type="text"
+            name="ezharnameForm"
+            id="ezharnameFormEzharKLastName"
+          />
+          <label for="">کد ملی </label>
+          <input
+            type="text"
+            name="ezharnameForm"
+            id="ezharnameFormEzharKNationalID"
+          />
+          <label for="">شماره تلفن همراه </label>
+          <input
+            type="text"
+            name="ezharnameForm"
+            id="ezharnameFormEzharKPhoneNum"
+          />
+          <h6>آدرس</h6>
+          <textarea
+            name="ezharnameForm"
+            id="ezharnameFormEzharKAddress"
+            cols="70"
+            rows="2"
+          ></textarea>
+        </div>
+      </div>
+      <button type="button" onclick="personalFormDuplicator(1, null)">
+        برای اضافه کردن نفر جدید کلیک کنید
+      </button>
+      <hr />
+      <h3>اظهار شونده</h3>
+      <div id="personalFormDuplicateReceiver">
+        <div>
+          <label for="">نام</label>
+          <input
+            type="text"
+            name="ezharnameForm"
+            id="ezharnameFormEzharSFirstName"
+          />
+          <label for="">نام خانوادگی</label>
+          <input
+            type="text"
+            name="ezharnameForm"
+            id="ezharnameFormEzharSLastName"
+          />
+          <label for="">کد ملی </label>
+          <input
+            type="text"
+            name="ezharnameForm"
+            id="ezharnameFormEzharSNationalID"
+          />
+          <label for="">شماره تلفن همراه </label>
+          <input
+            type="text"
+            name="ezharnameForm"
+            id="ezharnameFormEzharSPhoneNum"
+          />
+          <h6>آدرس</h6>
+          <textarea
+            name="ezharnameForm"
+            id="ezharnameFormEzharSAddress"
+            cols="70"
+            rows="2"
+          ></textarea>
+        </div>
+      </div>
+      <button type="button" onclick="personalFormDuplicator(null, 1)">
+        برای اضافه کردن نفر جدید کلیک کنید
+      </button>
+      <hr />
+      <h2>موضوع</h2>
+      <textarea
+        name="ezharnameForm"
+        id="ezharnameFormSubject"
+        cols="70"
+        rows="1"
+      ></textarea>
+      <h2>شرح درخواست</h2>
+      <textarea
+        name="ezharnameForm"
+        id="ezharnameFormFullText"
+        cols="70"
+        rows="6"
+      ></textarea>
+      <h1>مستندات</h1>
+      <input type="file" name="ezharnameForm" id="ezharnameFormSanad" />
+      <div id="fileInputDuplicatePlace1"></div>
+      <button type="button" onclick="fileInputDuplicator(1)">
+        برای ارائه مستندات بیشتر کلیک کنید
+      </button>
+
+      <section class="submit">
+        <h1>ارسال مدارک</h1>
+        <div class="form-check mb-3">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="validationFormCheck1"
+            required
+          />
+          <label class="form-check-label m-2" for="validationFormCheck1"
+            >اینجانب صحت تمامی مدارک را تایید میکنم</label
+          >
+          <div class="invalid-feedback">صحت مدارک باید تایید گردد</div>
+        </div>
+        <br />
+        <button class="btn btn-primary" type="submit">تایید</button>
+      </section>
+    </form>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/ezhaname&lavayeh.js"></script>
+  </body>
+</html>

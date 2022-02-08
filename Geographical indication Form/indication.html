@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/bootstrap.min.css" />
+    <link rel="stylesheet" href="/style/indication.css" />
+    <link rel="stylesheet" href="/style/bootstrap2-toggle.min.css" />
+    <script src="/script/all.min.js"></script>
+    <script src="/script/jquery-3.6.0.min.js"></script>
+    <script src="/script/bootstrap-toggle.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="me-3">نشان جغرافیایی</h1>
+      <div class="d-flex align-items-center me-3">
+        <span>حقوقی</span>
+        <input
+          type="checkbox"
+          id="toggleBox"
+          data-toggle="toggle"
+          data-offstyle="primary"
+          checked
+        />
+        <span>حقیقی</span>
+      </div>
+
+      <form class="needs-validation" novalidate>
+        <section class="realPerson m-3 p-3">
+          <p>شخص حقیقی</p>
+          <div class="d-flex flex-wrap w-100">
+            <div>
+              <label for="validationCustom01" class="form-label"> نام</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">نام خالی است.</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label">
+                نام خانوادگی</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">نام خانوادگی خالی است.</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label">
+                نام پدر</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">نام پدر خالی است.</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label"> کدملی</label>
+              <input
+                type="number"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">کد ملی خالی است</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label">
+                شماره شناسنامه</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">شماره شناسنامه خالی است.</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label">
+                صادره از</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">پر کردن این فیلد اجباری است</div>
+            </div>
+            <div class="w-100">
+              <label for="validationCustom01" class="form-label"> ادرس</label>
+              <input
+                type="text"
+                class="form-control w-100 address"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">ادرس وارد نشده</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label"> ایمیل</label>
+              <input
+                type="email"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">ایمیل به درستی وارد نشده.</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label"> کدپستی</label>
+              <input
+                type="number"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">کد پستی به درستی وارد نشده.</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label">
+                شماره تماس</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">شماره تماس به درست وارد نشده.</div>
+            </div>
+            <br />
+            <div class="d-block w-100">
+              <label for="">تصویر شناسنامه</label><br />
+              <div class="form-check mb-3">
+                <label class="form-check-label" for="validationFormCheck1"
+                  >صفحه اول شناسنامه</label
+                >
+                <input
+                  type="file"
+                  class="form-check-input"
+                  id="validationFormCheck1"
+                  required
+                />
+                <div class="invalid-feedback">
+                  صفحه اول شناسنامه را بارگذاری نکرده اید
+                </div>
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label" for="validationFormCheck1"
+                  >صفحه دوم شناسنامه</label
+                >
+                <input
+                  type="file"
+                  class="form-check-input"
+                  id="validationFormCheck1"
+                  required
+                />
+                <div class="invalid-feedback">
+                  صفحه دوم شناسنامه را بارگذاری نکرده اید
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="d-block w-100">
+              <label for="">تصویر کارت ملی</label><br />
+              <div class="form-check mb-3">
+                <label class="form-check-label" for="validationFormCheck1"
+                  >روی کارت ملی</label
+                >
+                <input
+                  type="file"
+                  class="form-check-input"
+                  id="validationFormCheck1"
+                  required
+                />
+                <div class="invalid-feedback">
+                  روی کارت ملی را بارگذاری نکرده اید
+                </div>
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label" for="validationFormCheck1"
+                  >پشت کارت ملی</label
+                >
+                <input
+                  type="file"
+                  class="form-check-input"
+                  id="validationFormCheck1"
+                  required
+                />
+                <div class="invalid-feedback">
+                  پشت کارت ملی را بارگذاری نکرده اید
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="legalPerson m-3 p-3">
+          <p>شخص حقوقی</p>
+          <div class="d-flex flex-wrap">
+            <div>
+              <label for="validationCustom01" class="form-label">
+                نام شرکت</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="valid-feedback"></div>
+            </div>
+            <div>
+              <label for="validationCustom01" class="form-label">
+                به شناسه ملی</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="valid-feedback"></div>
+            </div>
+            <div>
+              <label for="validationCustom01" class="form-label">
+                شماره ثبت</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="valid-feedback"></div>
+            </div>
+            <div>
+              <label for="validationCustom01" class="form-label">
+                سمت در شرکت</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="valid-feedback"></div>
+            </div>
+            <div class="w-100">
+              <label for="validationCustom01" class="form-label"> ادرس</label>
+              <input
+                type="text"
+                class="form-control w-100 address"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">ادرس وارد نشده</div>
+            </div>
+            <div>
+              <label for="validationCustom01" class="form-label"> ایمیل</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="valid-feedback"></div>
+            </div>
+            <div>
+              <label for="validationCustom01" class="form-label">
+                کد پستی</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="valid-feedback"></div>
+            </div>
+            <div>
+              <label for="validationCustom01" class="form-label">
+                شماره تماس</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="valid-feedback"></div>
+            </div>
+          </div>
+        </section>
+        <section class="m-3 p-3">
+          <p>دریافت کننده ابلاغ لیگالند</p>
+
+          <div class="form-check mb-3">
+            <label class="form-check-label" for="validationFormCheck1"
+              >ارسال وکالتنامه برای دریافت ابلاغ ها</label
+            >
+            <input
+              type="file"
+              class="form-check-input"
+              id="validationFormCheck1"
+              required
+            />
+            <div class="invalid-feedback">وکالتنامه را بارگذاری نکرده اید</div>
+          </div>
+        </section>
+        <section class="inventor m-3 p-3">
+          <p>مشخصات طراح</p>
+          <div class="d-flex flex-wrap w-100">
+            <div>
+              <label for="validationCustom01" class="form-label"> نام</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">نام خالی است.</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label">
+                نام خانوادگی</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">نام خانوادگی خالی است.</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label">
+                نام پدر</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">نام پدر خالی است.</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label"> کدملی</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">کد ملی خالی است</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label">
+                شماره شناسنامه</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">شماره شناسنامه خالی است.</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label">
+                صادره از</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">پر کردن این فیلد اجباری است</div>
+            </div>
+            <div class="w-100">
+              <label for="validationCustom01" class="form-label"> ادرس</label>
+              <input
+                type="text"
+                class="form-control w-100 address"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">ادرس وارد نشده</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label"> ایمیل</label>
+              <input
+                type="email"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">ایمیل به درستی وارد نشده.</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label"> کدپستی</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">کد پستی به درستی وارد نشده.</div>
+            </div>
+
+            <div>
+              <label for="validationCustom01" class="form-label">
+                شماره تماس</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="invalid-feedback">شماره تماس به درست وارد نشده.</div>
+            </div>
+            <br />
+            <div class="d-block w-100">
+              <br/>
+              <div class="form-check mb-3">
+                <label class="form-check-label" for="validationFormCheck1"
+                  >صفحه اول شناسنامه</label
+                >
+                <input
+                  type="file"
+                  class="form-check-input"
+                  id="validationFormCheck1"
+                  required
+                />
+                <div class="invalid-feedback">
+                  صفحه اول شناسنامه را بارگذاری نکرده اید
+                </div>
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label" for="validationFormCheck1"
+                  >صفحه دوم شناسنامه</label
+                >
+                <input
+                  type="file"
+                  class="form-check-input"
+                  id="validationFormCheck1"
+                  required
+                />
+                <div class="invalid-feedback">
+                  صفحه دوم شناسنامه را بارگذاری نکرده اید
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="d-block w-100">
+             <br />
+              <div class="form-check mb-3">
+                <label class="form-check-label" for="validationFormCheck1"
+                  >روی کارت ملی</label
+                >
+                <input
+                  type="file"
+                  class="form-check-input"
+                  id="validationFormCheck1"
+                  required
+                />
+                <div class="invalid-feedback">
+                  روی کارت ملی را بارگذاری نکرده اید
+                </div>
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label" for="validationFormCheck1"
+                  >پشت کارت ملی</label
+                >
+                <input
+                  type="file"
+                  class="form-check-input"
+                  id="validationFormCheck1"
+                  required
+                />
+                <div class="invalid-feedback">
+                  پشت کارت ملی را بارگذاری نکرده اید
+                </div>
+              </div>
+              <br>
+              <div class="form-check mb-3">
+                <label class="form-check-label" for="validationFormCheck1">
+                  نشان جغرافیایی</label
+                >
+                <input
+                  type="file"
+                  class="form-check-input"
+                  id="validationFormCheck1"
+                  required
+                />
+                <div class="invalid-feedback">
+                  نشان جغرافیایی را بارگذاری نکرده اید
+                </div>
+              </div>
+              <br>
+              <div>
+                <label for="validationCustom01" class="form-label">حوزه فعالیت</label>
+                <input
+                  type="text"
+                  class="form-control float-start"
+                  id="validationCustom01"
+
+                  required
+                />
+                <div class="invalid-feedback">حوزه فعالیت خالی است.</div>
+              </div>
+            </div>
+            
+            <div class="w-100 mt-3">
+              <textarea class="p-2 w-50" placeholder="توضیحات..."></textarea>
+            </div>
+          </div>
+        </section>
+
+        <section class="border m-3 p-3">
+          <p>مدارک مورد نیاز برای ثبت نشان جغرافیایی</p>
+          <div>
+            <div class="form-check mb-3">
+              <label class="form-check-label" for="validationFormCheck1">
+                صفحه اول شناسنامه</label
+              >
+              <input
+                type="file"
+                class="form-check-input"
+                id="validationFormCheck1"
+                required
+              />
+              <div class="invalid-feedback">صفحه اول را بارگذاری نکرده اید</div>
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label" for="validationFormCheck1">
+                صفحه دوم شناسنامه</label
+              >
+              <input
+                type="file"
+                class="form-check-input"
+                id="validationFormCheck1"
+                required
+              />
+              <div class="invalid-feedback">صفحه دوم را بارگذاری نکرده اید</div>
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label" for="validationFormCheck1">
+                صفحه سوم شناسنامه</label
+              >
+              <input
+                type="file"
+                class="form-check-input"
+                id="validationFormCheck1"
+                required
+              />
+              <div class="invalid-feedback">صفحه سوم را بارگذاری نکرده اید</div>
+            </div>
+          </div>
+          <br />
+
+          <div>
+            <div class="form-check mb-3">
+              <label class="form-check-label" for="validationFormCheck1">
+                رو کارت ملی</label
+              >
+              <input
+                type="file"
+                class="form-check-input"
+                id="validationFormCheck1"
+                required
+              />
+              <div class="invalid-feedback">
+                روی کارت ملی را بارگذاری نکرده اید
+              </div>
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label" for="validationFormCheck1">
+                پشت کارت ملی</label
+              >
+              <input
+                type="file"
+                class="form-check-input"
+                id="validationFormCheck1"
+                required
+              />
+              <div class="invalid-feedback">
+                پشت کارت ملی را بارگذاری نکرده اید
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p>مدارک نماینده قانونی</p>
+            <div>
+              <div class="form-check mb-3">
+                <label class="form-check-label" for="validationFormCheck1">
+                  صفحه اول شناسنامه</label
+                >
+                <input
+                  type="file"
+                  class="form-check-input"
+                  id="validationFormCheck1"
+                  required
+                />
+                <div class="invalid-feedback">
+                  صفحه اول را بارگذاری نکرده اید
+                </div>
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label" for="validationFormCheck1">
+                  صفحه دوم شناسنامه</label
+                >
+                <input
+                  type="file"
+                  class="form-check-input"
+                  id="validationFormCheck1"
+                  required
+                />
+                <div class="invalid-feedback">
+                  صفحه دوم را بارگذاری نکرده اید
+                </div>
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label" for="validationFormCheck1">
+                  صفحه سوم شناسنامه</label
+                >
+                <input
+                  type="file"
+                  class="form-check-input"
+                  id="validationFormCheck1"
+                  required
+                />
+                <div class="invalid-feedback">
+                  صفحه سوم را بارگذاری نکرده اید
+                </div>
+              </div>
+            </div>
+            <br />
+            <div>
+              <div class="form-check mb-3">
+                <label class="form-check-label" for="validationFormCheck1">
+                  رو کارت ملی</label
+                >
+                <input
+                  type="file"
+                  class="form-check-input"
+                  id="validationFormCheck1"
+                  required
+                />
+                <div class="invalid-feedback">
+                  روی کارت ملی را بارگذاری نکرده اید
+                </div>
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label" for="validationFormCheck1">
+                  پشت کارت ملی</label
+                >
+                <input
+                  type="file"
+                  class="form-check-input"
+                  id="validationFormCheck1"
+                  required
+                />
+                <div class="invalid-feedback">
+                  پشت کارت ملی را بارگذاری نکرده اید
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="submit border m-3 p-3">
+          <div class="form-check mb-3">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="validationFormCheck1"
+              required
+            />
+            <label class="form-check-label" for="validationFormCheck1"
+              >اینجانب صحت تمامی مدارک را تایید میکنم</label
+            >
+            <div class="invalid-feedback">صحت مدارک باید تایید گردد</div>
+          </div>
+          <br />
+          <button class="btn btn-primary" type="submit">تایید</button>
+        </section>
+      </form>
+    </div>
+
+    <script src="/script/indication.js"></script>
+  </body>
+</html>

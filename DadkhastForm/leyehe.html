@@ -1,0 +1,135 @@
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>لایحه نویسی</title>
+    <link rel="stylesheet" href="/style/bootstrap.min.css" />
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+
+  <body>
+    <form class="needs-validation" novalidate>
+      <h1>درخواست برای</h1>
+      <select name="layeheForm" id="">
+        <option value="">بدوی</option>
+        <option value="">تجدید نظر | فرجام خواهی</option>
+      </select>
+      <h1>شاکی / خواهان</h1>
+      <div id="personalFormDuplicateSender">
+        <div>
+          <label for="">نام </label>
+          <input type="text" name="layeheForm" id="layeheFormShakiFirstName" />
+          <label for="">نام خانوادگی </label>
+          <input type="text" name="layeheForm" id="layeheFormShakiLastName" />
+          <label for="">کد ملی</label>
+          <input type="text" name="layeheForm" id="layeheFormShakiNationalID" />
+          <label for="">فرزند</label>
+          <input type="text" name="layeheForm" id="layeheFormShakiFather" />
+          <label for="">کد پستی</label>
+          <input type="text" name="layeheForm" id="layeheFormShakiPostNum" />
+          <label for="">شماره تلفن همراه</label>
+          <input type="text" name="layeheForm" id="layeheFormShakiPhoneNum" />
+          <h3>آدرس</h3>
+          <textarea
+            name="layeheForm"
+            id="layeheFormShakiAddress"
+            cols="70"
+            rows="2"
+          ></textarea>
+        </div>
+      </div>
+      <button type="button" onclick="personalFormDuplicator(1, null)">
+        برای اضافه کردن نفر جدید کلیک کنید
+      </button>
+
+      <h1>متشاکی / خوانده</h1>
+      <div id="personalFormDuplicateReceiver">
+        <div>
+          <label for="">نام </label>
+          <input
+            type="text"
+            name="layeheForm"
+            id="layeheFormMoteshakiFirstName"
+          />
+          <label for="">نام خانوادگی </label>
+          <input
+            type="text"
+            name="layeheForm"
+            id="layeheFormMoteshakiLastName"
+          />
+          <label for="">کد ملی</label>
+          <input
+            type="text"
+            name="layeheForm"
+            id="layeheFormMoteshakiNationalID"
+          />
+          <label for="">فرزند</label>
+          <input type="text" name="layeheForm" id="layeheFormMoteshakiFather" />
+          <label for="">کد پستی</label>
+          <input
+            type="text"
+            name="layeheForm"
+            id="layeheFormMoteshakiPostNum"
+          />
+          <label for="">شماره تلفن همراه</label>
+          <input
+            type="text"
+            name="layeheForm"
+            id="layeheFormMoteshakiPhoneNum"
+          />
+          <h3>آدرس</h3>
+          <textarea
+            name="layeheForm"
+            id="layeheFormMoteshakiAddress"
+            cols="70"
+            rows="2"
+          ></textarea>
+        </div>
+      </div>
+      <button type="button" onclick="personalFormDuplicator(null, 1)">
+        برای اضافه کردن نفر جدید کلیک کنید
+      </button>
+      <h2>موضوع</h2>
+      <textarea
+        name="layeheForm"
+        id="layeheFormSubject"
+        cols="70"
+        rows="1"
+      ></textarea>
+      <h2>شرح شکایت</h2>
+      <textarea
+        name="layeheForm"
+        id="layeheFormFullText"
+        cols="70"
+        rows="6"
+      ></textarea>
+      <h1>مستندات</h1>
+      <input type="file" name="layeheForm" id="layeheFormSanad" />
+      <div id="fileInputDuplicatePlace1"></div>
+      <button onclick="fileInputDuplicator(1)">
+        برای ارائه مستندات بیشتر کلیک کنید
+      </button>
+
+      <section class="submit">
+        <h1>ارسال مدارک</h1>
+        <div class="form-check mb-3">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="validationFormCheck1"
+            required
+          />
+          <label class="form-check-label m-2" for="validationFormCheck1"
+            >اینجانب صحت تمامی مدارک را تایید میکنم</label
+          >
+          <div class="invalid-feedback">صحت مدارک باید تایید گردد</div>
+        </div>
+        <br />
+        <button class="btn btn-primary" type="submit">تایید</button>
+      </section>
+    </form>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/ezhaname&lavayeh.js"></script>
+  </body>
+</html>
