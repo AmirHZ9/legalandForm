@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/bootstrap.min.css">
+    <link rel="stylesheet" href="/Style/mozakere.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="m-3">درخواست تیم مذاکره</h1>
+    <div class="container-fluid">
+        <form class="needs-validation" novalidate>
+            <section class="m-3 p-3">
+                <p>متقاضی</p>
+                <div class="d-flex flex-wrap w-100">
+
+                    <div>
+                        <label for="validationCustom01" class="form-label"> نام</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="validationCustom01"
+                          required
+                        />
+                        <div class="invalid-feedback">نام خالی است.</div>
+                      </div>
+        
+                      <div>
+                        <label for="validationCustom01" class="form-label">
+                          نام خانوادگی</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="validationCustom01"
+                          required
+                        />
+                        <div class="invalid-feedback">نام خانوادگی خالی است.</div>
+                      </div>
+        
+                      <div>
+                        <label for="validationCustom01" class="form-label"> کدملی</label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="validationCustom01"
+                          required
+                        />
+                        <div class="invalid-feedback">کد ملی خالی است</div>
+                </div>
+                  </div>
+            </section>
+
+            <section class="m-3 p-3">
+                <p>حوزه کاری</p>
+                <div>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="validationCustom01"
+                      required
+                    />
+                    <div class="invalid-feedback">حوزه کاری خالی است</div>
+            </div>
+            </section>
+
+            <section class="m-3 p-3">
+                <p>موضوع</p>
+                <div>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="validationCustom01"
+                      required
+                    />
+                    <div class="invalid-feedback">موضوع ملی خالی است</div>
+            </div>
+                
+                
+                <textarea  cols="30" rows="10" placeholder="شرح" class="m-2 p-2 w-100"></textarea>
+            </section>
+            
+            <section class="submit  m-3 p-3">
+                <p>ثبت درخواست</p>
+                <div class="form-check mb-3">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="validationFormCheck1"
+                    required
+                  />
+                  <label class="form-check-label" for="validationFormCheck1"
+                    >اینجانب صحت تمامی مدارک را تایید میکنم</label
+                  >
+                  <div class="invalid-feedback">صحت مدارک باید تایید گردد</div>
+                </div>
+                <br />
+                <button class="btn btn-primary" type="submit">تایید</button>
+              </section>
+        </form>
+
+    </div>
+
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/mozakere.js"></script>
+</body>
+</html>

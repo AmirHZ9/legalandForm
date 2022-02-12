@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/davari.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="needs-validation" novalidate>
+      <h1>اطلاعات متقاضی حقیقی</h1>
+      <div class="d-flex flex-wrap m-3">
+        <div>
+          <lable>نام</lable>
+          <input type="text" name="primitiveForm" id="primitiveFormFirstName" />
+        </div>
+        <div>
+          <lable>نام خانوادگی</lable>
+          <input type="text" name="primitiveForm" id="primitiveFormLastName" />
+        </div>
+        <div>
+          <lable>کد ملی</lable>
+          <input
+            type="text"
+            name="primitiveForm"
+            id="primitiveFormNationalID"
+          />
+        </div>
+      </div>
+      <hr />
+      <h1>نوع سرمایه غیر نقدی</h1>
+      <div class="m-3">
+        <label for="">منقول</label>
+        <input
+          type="checkbox"
+          name="primitiveForm"
+          id="primitiveFormManghool"
+        />
+        <label for="">غیر منقول</label>
+        <input
+          type="checkbox"
+          name="primitiveForm"
+          id="primitiveFormNaManghool"
+        />
+        <label for="">مشهود</label>
+        <input
+          type="checkbox"
+          name="primitiveForm"
+          id="primitiveFormMashhood"
+        />
+        <label for="">غیر مشهود</label>
+        <input
+          type="checkbox"
+          name="primitiveForm"
+          id="primitiveFormNaMashhood"
+        />
+        <label for="">سایر</label>
+        <input type="checkbox" name="primitiveForm" id="primitiveFormEtc" />
+      </div>
+      <h1>توضیحات سرمایه غیر نقدی</h1>
+
+      <div class="m-3">
+        <textarea
+          name="primitiveForm"
+          id="primitiveFormFullText"
+          cols="100"
+          rows="5"
+        ></textarea>
+      </div>
+
+      <div class="m-3">
+        <label for="">مبلغ ارزش پیشنهادی متقاضی</label>
+        <input
+          type="text"
+          name="primitiveForm"
+          id="primitiveFormSelfValuation"
+        />
+      </div>
+
+      <hr />
+      <h1>پیوست سند</h1>
+
+      <p class="m-3">بارگذاری اسناد منقول، غیر منقول، مشهود و نامشهود</p>
+      <div id="fileInputDuplicatePlace1">
+        <input type="file" name="primitiveForm" id="primitiveFormBasics" />
+        <br />
+      </div>
+      <button type="button" onclick="fileInputDuplicator(1)">
+        برای بارگذاری اسناد بیشتر کلیک کنید
+      </button>
+
+      <section class="submit">
+        <h1>ارسال مدارک</h1>
+        <div class="form-check mb-3">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="validationFormCheck1"
+            required
+          />
+          <label class="form-check-label m-2" for="validationFormCheck1"
+            >اینجانب صحت تمامی مدارک را تایید میکنم</label
+          >
+          <div class="invalid-feedback">صحت مدارک باید تایید گردد</div>
+        </div>
+        <br />
+        <button class="btn btn-primary" type="submit">تایید</button>
+      </section>
+    </form>
+    <script src="/script/jquery-3.6.0.min.js"></script>
+    <script src="/script/davari.js"></script>
+  </body>
+</html>

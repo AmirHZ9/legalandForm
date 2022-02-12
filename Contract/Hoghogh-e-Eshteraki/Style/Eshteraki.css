@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+      background: #e4e4e4 !important;
+  }
+  p{
+    background-color: #492102;
+    border-radius: 5px;
+    padding: 8px;
+    color: #fff;
+
+}
+input{
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+textarea{
+  resize: none;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+
+}
+.company{
+  outline: none;
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  background-color: transparent;
+  border-bottom:1px solid gray ;
+  transition: 0.3s;
+}
+.company:hover{
+ transform: scale(1.1);
+}
+.roshdForm,
+.customForm{
+  display: none;
+}
+.submit{
+  background-color: #656d4a;
+ 
+  min-width: 100px;
+  bottom: 0;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+ul{
+  margin: 20px;
+}
+li{
+  list-style-type: none;
+  padding-bottom: 8px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
