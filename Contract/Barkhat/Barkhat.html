@@ -10,10 +10,13 @@
 </head>
 <body>
 <div>
+  
     <form class="needs-validation" novalidate>
-        <section class="realPerson  m-3 p-3">
-            <p>طرف اول شخص حقیقی/حقوقی  </p>
-            <div class="d-flex flex-wrap w-100">
+          <!-- ماده اول -->
+      <section class="realPerson  m-3 p-3">
+          <span>ماده 1: مشخصات طرفین قرار داد</span>
+          <div class="d-flex flex-wrap w-100 border">
+            <p class="title w-100">1-1.طرف اول</p>
               <div>
                 <label for="validationCustom01" class="form-label"> نام</label>
                 <input
@@ -133,8 +136,8 @@
           </section>
 
           <section class="realPerson  m-3 p-3">
-            <p>طرف دوم شخص حقیقی/حقوقی  </p>
-            <div class="d-flex flex-wrap w-100">
+            <div class="d-flex flex-wrap w-100 border">
+              <p class="title w-100">1-2.طرف دوم</p>
               <div>
                 <label for="validationCustom01" class="form-label"> نام</label>
                 <input
@@ -252,14 +255,88 @@
               </div>
             </div>
           </section>
-          <div class="container-fluid">
-              <span>تبصره ۱:</span><p>طرفین ضمن تایید اطلاعات فوق اعلان مینمایند ادرس و راه های تماس , اطلاعات قانونی طرفین قرارداد بوده  و هرگونه ابلاغ از طریق ذیل به منزله ابلاغ قانونی و رسمی میباشد و درصورت هرگونه تغییرات در اطلاعات فوق طرفین موظف می باشند ظرف 3 روز موضوع را به طرف دیگر اطلاع رسانی نمایند و در متمم قرارداد قید گردد.</p>
-              <button class="editbtn" type="button">ویرایش</button>
-              <button class="updatebtn" type ='button'> تایید</button>
+
+
+          <div class=" m-3 p-3 ">
+              <span>تبصره ۱:</span><p class="d-inline  ">طرفین ضمن تایید اطلاعات فوق اعلان مینمایند ادرس و راه های تماس , اطلاعات قانونی طرفین قرارداد بوده  و هرگونه ابلاغ از طریق ذیل به منزله ابلاغ قانونی و رسمی میباشد و درصورت هرگونه تغییرات در اطلاعات فوق طرفین موظف می باشند ظرف 3 روز موضوع را به طرف دیگر اطلاع رسانی نمایند و در متمم قرارداد قید گردد.</p>
+              <div class="mt-3">
+                <button class="editbtn" type="button">ویرایش</button>
+                <button class="updatebtn" type ='button'> تایید</button>
+              </div>
+          </div>
+
+          <!-- ماده دوم -->
+          <div class="m-3 p-3 border">
+            <p class="title">ماده 2: موضوع و مدت قرارداد</p>
+            <textarea cols="30" rows="10" class="w-100"></textarea>
+          </div>
+          <!-- ماده سوم -->
+          <div class="m-3 p-3  border">
+            <p class="title">ماده 3:تعهدات طرف اول</p>
+            <ol class="p-3">
+
+            </ol>
+            <div class="d-flex justify-content-around position-relative">
+
+              <p class="w-75 ">
+                <span class="textarea w-100" role="textbox" data-placeholder="نوشتن..." contenteditable></span>
+                </p>
+                <button class="submit" type="button">ثبت</button>
+            </div>
           </div>
 
 
+            <!-- ماده چهارم -->
+          <div class="m-3 p-3 border">
+            <p class="title ">ماده 4: شرایط خاتمه یا فسخ قرار داد</p>
+            <ol class="p-3">
 
+            </ol>
+            <div class="d-flex justify-content-around position-relative">
+              <p class="w-75 ">
+                <span class="textarea w-100" role="textbox" data-placeholder="نوشتن..." contenteditable></span>
+                </p>
+                <button class="submit" type="button">ثبت</button>
+            </div>
+          </div>
+
+
+           <!-- ماده پنجم -->
+           <div class="m-3 p-3 border">
+            <p class="title ">ماده 5: جبران خسارت </p>
+            <ol class="p-3">
+
+            </ol>
+            <div class="d-flex justify-content-around position-relative">
+              <p class="w-75 ">
+                <span class="textarea w-100" role="textbox" data-placeholder="نوشتن..." contenteditable></span>
+                </p>
+                <button class="submit" type="button">ثبت</button>
+            </div>
+          </div>
+
+            <!-- ماده ششم -->
+            <div class="m-3 p-3 border made6">
+              <p class="title ">ماده 6: حل و فصل اختلافات</p>
+              <ol class="p-3">
+  
+              </ol>
+              <div class="d-flex justify-content-around position-relative">
+                <p class="w-75 ">
+                  <span class="textarea w-100" role="textbox" data-placeholder="نوشتن..." contenteditable></span>
+                  </p>
+                  <button class="submit" type="button">ثبت</button>
+              </div>
+            </div>
+            
+           <div class="m-3">
+             <button class="addrules" type="button">اضافه کردن ماده</button>
+           </div>
+          </div>
+          
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit"> ارسال اطلاعات</button>
+          </div>
     </form>
 </div>
 

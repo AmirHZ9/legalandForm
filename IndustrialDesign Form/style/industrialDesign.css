@@ -9,7 +9,6 @@
   .Claim div,
   .businessCards div,
   .logo div,
-  .legalRepresentativ div,
   .legalPerson div,
   .realPerson div {
     margin: 13px 0;
@@ -89,6 +88,10 @@
     border: 1px solid rgba(0, 0, 0, 0.25) !important;
   }
 
+  .form-check{
+    display: flex !important;
+    justify-content: space-between;
+  }
 
   .form-check-input{
       height: auto !important;
