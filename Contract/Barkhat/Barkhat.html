@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-<div>
+<div class="border">
   
     <form class="needs-validation" novalidate>
           <!-- ماده اول -->
@@ -17,116 +17,117 @@
           <span>ماده 1: مشخصات طرفین قرار داد</span>
           <div class="d-flex flex-wrap w-100 border">
             <p class="title w-100">1-1.طرف اول</p>
-              <div>
-                <label for="validationCustom01" class="form-label"> نام</label>
+              <div class="d-flex flex-wrap align-items-baseline">
+                
+                <label for="validationCustom01" class="form-label "> نام</label>
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control d-block"
                   id="validationCustom01"
+               
                   required
+                  placeholder=". . . . . . . . . . . ."
                 />
-                <div class="invalid-feedback">نام خالی است.</div>
+              
+                 <div class="invalid-feedback">نام خالی است.</div>
               </div>
     
-              <div>
-                <label for="validationCustom01" class="form-label">
-                  نام خانوادگی</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="validationCustom01"
-                  required
-                />
-                <div class="invalid-feedback">نام خانوادگی خالی است.</div>
-              </div>
+            
     
-              <div>
+              <div class="d-flex flex-wrap align-items-baseline">
                 <label for="validationCustom01" class="form-label"> نام پدر</label>
                 <input
                   type="text"
                   class="form-control"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">نام پدر خالی است.</div>
               </div>
     
-              <div>
+              <div class="d-flex flex-wrap align-items-baseline melli">
                 <label for="validationCustom01" class="form-label"> کدملی/شناسه ملی</label>
                 <input
                   type="number"
-                  class="form-control"
+                  class="form-control w-50"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">کد ملی خالی است</div>
               </div>
     
-              <div>
+              <div class="d-flex flex-wrap align-items-baseline melli">
                 <label for="validationCustom01" class="form-label">
                   شماره شناسنامه/شناسه ثبت</label
                 >
                 <input
                   type="number"
-                  class="form-control"
+                  class="form-control w-50"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">شماره شناسنامه خالی است.</div>
               </div>
     
-              <div>
+              <div class="d-flex flex-wrap align-items-baseline">
                 <label for="validationCustom01" class="form-label"> صادره از</label>
                 <input
                   type="text"
                   class="form-control"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">پر کردن این فیلد اجباری است</div>
               </div>
-              <div class="w-100">
+              <div class="w-100 d-flex flex-wrap align-items-baseline">
                 <label for="validationCustom01" class="form-label"> ادرس</label>
                 <input
                   type="text"
-                  class="form-control w-100 address"
+                  class="form-control w-75 address"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">ادرس وارد نشده</div>
               </div>
     
-              <div>
+              <div class="d-flex flex-wrap align-items-baseline">
                 <label for="validationCustom01" class="form-label"> ایمیل</label>
                 <input
                   type="email"
                   class="form-control"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">ایمیل به درستی وارد نشده.</div>
               </div>
     
-              <div>
+              <div class="d-flex flex-wrap align-items-baseline">
                 <label for="validationCustom01" class="form-label"> کدپستی</label>
                 <input
                   type="number"
                   class="form-control"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">کد پستی به درستی وارد نشده.</div>
               </div>
     
-              <div>
+              <div class="d-flex flex-wrap align-items-baseline melli">
                 <label for="validationCustom01" class="form-label">
                   شماره تماس</label
                 >
                 <input
                   type="number"
-                  class="form-control"
+                  class="form-control w-50"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   maxlength="11"
                   required
                 />
@@ -138,117 +139,115 @@
           <section class="realPerson  m-3 p-3">
             <div class="d-flex flex-wrap w-100 border">
               <p class="title w-100">1-2.طرف دوم</p>
-              <div>
+              <div class="d-flex flex-wrap align-items-baseline">
                 <label for="validationCustom01" class="form-label"> نام</label>
                 <input
                   type="text"
                   class="form-control"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">نام خالی است.</div>
               </div>
     
-              <div>
-                <label for="validationCustom01" class="form-label">
-                  نام خانوادگی</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="validationCustom01"
-                  required
-                />
-                <div class="invalid-feedback">نام خانوادگی خالی است.</div>
-              </div>
+              
     
-              <div>
+              <div class="d-flex flex-wrap align-items-baseline">
                 <label for="validationCustom01" class="form-label"> نام پدر</label>
                 <input
                   type="text"
                   class="form-control"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">نام پدر خالی است.</div>
               </div>
     
-              <div>
+              <div class="d-flex flex-wrap align-items-baseline melli">
                 <label for="validationCustom01" class="form-label"> کدملی/شناسه ملی</label>
                 <input
                   type="number"
-                  class="form-control"
+                  class="form-control w-50"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">کد ملی خالی است</div>
               </div>
     
-              <div>
+              <div class="d-flex  flex-wrap align-items-baseline melli"> 
                 <label for="validationCustom01" class="form-label">
                   شماره شناسنامه/شناسه ثبت</label
                 >
                 <input
                   type="number"
-                  class="form-control"
+                  class="form-control w-50"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">شماره شناسنامه خالی است.</div>
               </div>
     
-              <div>
+              <div class="d-flex flex-wrap align-items-baseline">
                 <label for="validationCustom01" class="form-label"> صادره از</label>
                 <input
                   type="text"
                   class="form-control"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">پر کردن این فیلد اجباری است</div>
               </div>
-              <div class="w-100">
+              <div class="w-100 d-flex flex-wrap align-items-baseline">
                 <label for="validationCustom01" class="form-label"> ادرس</label>
                 <input
                   type="text"
-                  class="form-control w-100 address"
+                  class="form-control w-75 address"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">ادرس وارد نشده</div>
               </div>
     
-              <div>
+              <div class="d-flex  flex-wrap align-items-baseline">
                 <label for="validationCustom01" class="form-label"> ایمیل</label>
                 <input
                   type="email"
                   class="form-control"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">ایمیل به درستی وارد نشده.</div>
               </div>
     
-              <div>
+              <div class="d-flex flex-wrap align-items-baseline">
                 <label for="validationCustom01" class="form-label"> کدپستی</label>
                 <input
                   type="number"
                   class="form-control"
                   id="validationCustom01"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">کد پستی به درستی وارد نشده.</div>
               </div>
     
-              <div>
+              <div class="d-flex flex-wrap align-items-baseline melli">
                 <label for="validationCustom01" class="form-label">
                   شماره تماس</label
                 >
                 <input
                   type="number"
-                  class="form-control"
+                  class="form-control w-50"
                   id="validationCustom01"
                   maxlength="11"
+                  placeholder=". . . . . . . . . . . ."
                   required
                 />
                 <div class="invalid-feedback">شماره تماس به درست وارد نشده.</div>
@@ -256,22 +255,29 @@
             </div>
           </section>
 
-
           <div class=" m-3 p-3 ">
-              <span>تبصره ۱:</span><p class="d-inline  ">طرفین ضمن تایید اطلاعات فوق اعلان مینمایند ادرس و راه های تماس , اطلاعات قانونی طرفین قرارداد بوده  و هرگونه ابلاغ از طریق ذیل به منزله ابلاغ قانونی و رسمی میباشد و درصورت هرگونه تغییرات در اطلاعات فوق طرفین موظف می باشند ظرف 3 روز موضوع را به طرف دیگر اطلاع رسانی نمایند و در متمم قرارداد قید گردد.</p>
-              <div class="mt-3">
-                <button class="editbtn" type="button">ویرایش</button>
-                <button class="updatebtn" type ='button'> تایید</button>
-              </div>
+              <span>تبصره ۱:</span><p class="d-inline edit ">طرفین ضمن تایید اطلاعات فوق اعلان مینمایند ادرس و راه های تماس , اطلاعات قانونی طرفین قرارداد بوده  و هرگونه ابلاغ از طریق ذیل به منزله ابلاغ قانونی و رسمی میباشد و درصورت هرگونه تغییرات در اطلاعات فوق طرفین موظف می باشند ظرف 3 روز موضوع را به طرف دیگر اطلاع رسانی نمایند و در متمم قرارداد قید گردد.</p>
+              <button class="updatebtn" type ='button'> تایید</button>
+              
           </div>
 
           <!-- ماده دوم -->
-          <div class="m-3 p-3 border">
-            <p class="title">ماده 2: موضوع و مدت قرارداد</p>
-            <textarea cols="30" rows="10" class="w-100"></textarea>
-          </div>
+                    <div class="m-3 p-3" >
+                      <p class="title">ماده 2: موضوع و مدت قرارداد</p>
+                     
+                      <div>
+                        <p class="edit">موضوع قرارداد حاضر عبارت است دوره آموزش پذیری طرف دوم در محیط کسب و کار استارتاپی با محوریت اموزش تئوری توام با کار عملی در حوزه fonrtend , ui, ux , seo می باشد. 
+                          
+                          مدت قرار داد حاضر به مدت 90 روز خواهد بود که شروع ان از تاریخ 1400/10/10 می باشد.
+                        </p>  
+                      
+                
+                        <button class="updatebtn" type="button">تایید</button>
+                      </div>
+                        
+                    </div>
           <!-- ماده سوم -->
-          <div class="m-3 p-3  border">
+          <div class="m-3 p-3  ">
             <p class="title">ماده 3:تعهدات طرف اول</p>
             <ol class="p-3">
 
@@ -285,9 +291,8 @@
             </div>
           </div>
 
-
             <!-- ماده چهارم -->
-          <div class="m-3 p-3 border">
+          <div class="m-3 p-3 ">
             <p class="title ">ماده 4: شرایط خاتمه یا فسخ قرار داد</p>
             <ol class="p-3">
 
@@ -300,9 +305,8 @@
             </div>
           </div>
 
-
            <!-- ماده پنجم -->
-           <div class="m-3 p-3 border">
+           <div class="m-3 p-3 ">
             <p class="title ">ماده 5: جبران خسارت </p>
             <ol class="p-3">
 
@@ -316,7 +320,7 @@
           </div>
 
             <!-- ماده ششم -->
-            <div class="m-3 p-3 border made6">
+            <div class="m-3 p-3  made6">
               <p class="title ">ماده 6: حل و فصل اختلافات</p>
               <ol class="p-3">
   
@@ -328,14 +332,23 @@
                   <button class="submit" type="button">ثبت</button>
               </div>
             </div>
-            
-           <div class="m-3">
+
+            <!-- اضافه کردن ماده -->
+           <div class="m-3 newRules">
              <button class="addrules" type="button">اضافه کردن ماده</button>
            </div>
-          </div>
-          
-          <div class="col-12">
-            <button class="btn btn-primary" type="submit"> ارسال اطلاعات</button>
+           
+            <!-- ماده نسخ قرارداد -->
+            <div class="m-3 p-3  ">
+
+              <p class="title ">ماده  <span class="lastRules">7</span>: نسخ قرار داد</p>
+              <p>قرارداد حاضر در <input type="number" class="nosakh" placeholder=". . . ."> نسخه و <span class="tedadeMade">7</span>  ماده با اعتبار واحد هر نسخه تنظیم شده و برای طرفین لازم الاجراست.</p>
+            </div>
+
+           <!-- تایید فرم -->
+           <div class="m-3 ">
+             <button class="" type="submit"> ارسال اطلاعات</button>
+           </div>
           </div>
     </form>
 </div>
