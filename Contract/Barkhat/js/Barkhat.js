@@ -17,7 +17,7 @@ $(document).on("click", ".submit", function (event) {
         <button class="updatebtn" type="button">تایید</button>
         
         <br>
-        <hr>
+        
         </li>
         `);
   }
@@ -25,30 +25,38 @@ $(document).on("click", ".submit", function (event) {
   $(".textarea").text("");
 });
 
-//ویرایش بند
 
+//ویرایش بند
 var editable  = false
 $(document).on("click", ".edit", function () {
   var taskText = $(this).text();
   $(this).siblings(".updatebtn").css({ display: "inline-block" });
+  $(this).addClass('selected');
 
 if(editable == false){
-
   $(this)
-    .html(
-      " <span class='textarea' role='textbox'contenteditable>" +
-        taskText +
-        "</span>"
+  .html(
+    " <span class='textarea' role='textbox'contenteditable>" +
+    taskText +
+    "</span>"
     );
+    $(`.edit:not('.selected')`).addClass('disabledbutton')
       editable = true
+     
 }
 });
 
 // تایید ویرایش بند
 $(document).on("click", ".updatebtn", function () {
   var inputval = $(this).siblings("p").children("span").text();
-editable = false
+  console.log(inputval.length)
+  editable = false
+
+
+  $('.edit:not(this)').removeClass('disabledbutton')
+  $(this).siblings("p").removeClass('selected')
   $(this).siblings("p").text(inputval);
+
 
   
   $(".updatebtn").css({ display: "none" });
@@ -69,17 +77,18 @@ var lastRulse =  Number($('.lastRules').text())
 $(".addrules").click(function () {
   numberofrules++;
   lastRulse++
+  
   $('.tedadeMade').text(lastRulse)
   $('.lastRules').text(lastRulse)
   $(`
-        <div class="border m-3 p-3 extraRules"> 
-        <div class="d-flex ">
+        <div class="m-3 p-3 extraRules"> 
+        <div class="d-flex made" >
         <p class="ms-3">ماده <span class="number">${numberofrules}</span> :</p>
-        <div class="d-flex justify-content-around position-relative">
-        <p class="w-50 ">
-        <span class="textarea w-100" role="textbox" data-placeholder="نوشتن..." contenteditable></span>
+        <div class="d-flex position-relative w-75">
+        <p class=" editRulesTitle">
+        . . . .
         </p>
-        <button class="editRulesTitle" type="button">ویرایش</button>
+
         <button class="updateRulesTitle" type="button">تایید</button>
         </div>
         </div>  
@@ -98,26 +107,28 @@ $(".addrules").click(function () {
 });
 
 // ویرایش  تیتر ماده
+var editrulsetitle = false
 $(document).on("click", ".editRulesTitle", function () {
-  var taskText = $.trim($(this).siblings("p").text());
+  var taskText = $(this).text()
 
   $(this).siblings(".updateRulesTitle").css({ display: "block" });
-  $(this).hide();
-
+ 
+if(editrulsetitle == false){
   $(this)
-    .siblings("p")
     .html(
-      " <span class='textarea' role='textbox'contenteditable>" +
+      " <span class='textarea' role='textbox'contenteditable >" +
         taskText +
         "</span>"
     );
+    editrulsetitle = true
+}
 });
 
 // تایید ویرایش تیتر ماده
 $(document).on("click", ".updateRulesTitle", function () {
- 
- var inputval = $(this).siblings("p").children("span").text();
 
+  var inputval = $(this).siblings("p").children("span").text();
+  editrulsetitle= false
   $(this).siblings("p").text(inputval);
 
   $(".editRulesTitle").show();
@@ -131,14 +142,13 @@ $(document).on("click", ".deleterules", function () {
   $('.tedadeMade').text(lastRulse)
   $('.lastRules').text(lastRulse)
 
-  const num =$(this).parents('div').nextAll(".extraRules").children("div:first").children("p").children('span').text()-1
-
-  $(this).parents('div').nextAll(".extraRules").children("div:first").children("p").children('span').text(num)
-
+   $(this).parents('div').nextAll(".extraRules").children('.made').children('p').children('.number').each(function(){
+   $(this).text(($(this).text())-1)
+   
+  })
 
   $(this).parents(".extraRules").remove();
 });
-
 
 
 

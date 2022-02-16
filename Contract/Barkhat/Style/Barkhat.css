@@ -38,14 +38,23 @@ label{
   margin: 20px;
   padding: 15px;
 }
+.editRulesTitle{
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  padding: 5px;
+  
+}
 .edit{
   cursor: pointer;
   transition: 0.2s ease-in-out;
   padding: 5px;
 }
-
+.editRulesTitle:hover,
 .edit:hover{
   background-color:#eee;
+}
+.title{
+font-weight: bold;
 }
 input{
   width: 70% !important;
@@ -62,7 +71,7 @@ input{
     border-color: #0d6efd !important;
 }
 button {
-  width: 150px;
+  min-width: 150px;
   cursor: pointer;
   padding: 5px;
   border: 1px solid darkgray;
@@ -104,7 +113,22 @@ button {
 .form-check-input:valid {
   border: 1px solid rgba(0, 0, 0, 0.25) !important;
 }
-
+.btn-deleteTask{
+  position: absolute;
+  left: -41px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 179%;
+  top: 0;
+  min-width: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.closetbn-svg {
+  width: 10px;
+}
 textarea{
     outline: none;
     min-height: 150px;
@@ -130,13 +154,20 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 6px;
   border-radius: 3px;
 }
+.updateRulesTitle,
 .updatebtn{
   display: none;
+  
 }
-.editRulesTitle{
- display: none;
-}
+
 .nosakh{
   width: 30px !important;
   height: 30px !important;
+}
+.form-control:valid{
+  border: none !important;
+}
+.disabledbutton {
+  pointer-events: none;
+  opacity: 0.5;
 }
