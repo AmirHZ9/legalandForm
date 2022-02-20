@@ -12,6 +12,10 @@ section{
 label{
   margin-left: 10px;
 }
+li{
+  list-style-type: none;
+}
+
 .Claim div,
 .businessCards div,
 .logo div,
@@ -41,14 +45,18 @@ label{
 .editRulesTitle{
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  padding: 5px;
+
   
+}
+.editTabsare{
+  margin-right: 70px;
 }
 .edit{
   cursor: pointer;
   transition: 0.2s ease-in-out;
   padding: 5px;
 }
+.editTabsare:hover,
 .editRulesTitle:hover,
 .edit:hover{
   background-color:#eee;
@@ -113,6 +121,12 @@ button {
 .form-check-input:valid {
   border: 1px solid rgba(0, 0, 0, 0.25) !important;
 }
+.plus{
+  position: absolute;
+}
+
+.deleteTabsare,
+.deleterules,
 .btn-deleteTask{
   position: absolute;
   left: -41px;
@@ -149,6 +163,7 @@ input[type=number]::-webkit-outer-spin-button {
   overflow: hidden;
   border: 1px solid gray;
   min-height: 40px;
+  min-width: 40px;
   line-height: 20px;
   outline: none;
   padding: 6px;
@@ -158,6 +173,9 @@ input[type=number]::-webkit-outer-spin-button {
 .updatebtn{
   display: none;
   
+}
+.addTabsare{
+  display: none;
 }
 
 .nosakh{
@@ -169,5 +187,18 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .disabledbutton {
   pointer-events: none;
+  opacity: 0.5;
+}
+.hideTabsare{
+  opacity: 0;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+p:empty:not(:focus)::before {
+  content: attr(data-placeholder);
+  opacity: 0.5;
+}
+span:empty:not(:focus)::before {
+  content: attr(data-placeholder);
   opacity: 0.5;
 }
