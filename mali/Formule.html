@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <input type="checkbox" class="certainly"> 
+        <label>در دعاوی مالی در موردی که حکم دادگاه بدوی از حیث بهای خواسته قطعی است.</label>
+    </div>
+    <div>
+        <p class="District-Court"></p>
+    </div>
+  
+    <div>
+        <input class="districtPrice" type="number">
+        <button class="districtCal" type="button">محاسبه</button>
+    </div>
+
+    <div>
+        <p>دعاوی منتج به نتایج زیر</p>
+        <select class="form-select davi" aria-label="Default select example">
+            <option value="1">قرار ابطال دادخواست پیش از پاسخ به دعوا و دفاع از ان</option>
+            <option value="2">قرار رد دادخواست پس از پاسخ به دعوا و دفاع از ان</option>
+            <option value="3">قرار عدم استماع دعوا یا رد دعوا</option>
+            <option value="4">قرار سقوط دعوای تجدید نظر پیش از پاسخ به دعوا و دفاع از ان</option>
+            <option value="5">قرار سقوط دعوای تجدید نظر پس از پاسخ به دعوا و دفاع از ان</option>
+            <option value="6" >اعتراض به قرارهای حقوقی قابل اعتراض</option>
+          </select>
+    </div>
+    <div>
+        <input class="daviPrice" type="number">
+        <button class="daviCalculation" type="button">محاسبه</button>
+        <span class="daviconsequense"></span>
+    </div>
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap-toggle.min.js"></script>
+    <script src="/js/Formule.js"></script>
+</body>
+</html>

@@ -30,7 +30,8 @@ $(document).ready(function () {
      
       $('.addDocument')
         .append(
-          ' <input type="file" class="form-check-input" id="validationFormCheck1"/> '
+         ` <label class="form-check-label uploadFile m-1" for="validationFormCheck">بارگذاری مدارک  <i class="fas fa-upload"></i></i></label>
+           <input type="file" class="form-check-input" id="validationFormCheck"/> `
         );
     });
   
@@ -55,4 +56,6 @@ $(document).ready(function () {
       });
     })();
   });
+  
+
   
